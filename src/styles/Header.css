@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.header-container {
+  padding: 0;
+  flex: 1;
+}
+
+.navbar-transparent {
+  background-color: transparent !important;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.nav-links {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white; /* Agrega fondo blanco */
+    padding: 10px 20px; /* Añade padding para un mejor diseño */
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+    width: 100%;
+    color: black; /* Asegura que el texto sea visible sobre el fondo blanco */
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: black; /* Asegura que el texto sea visible sobre el fondo blanco */
+  }
+
+  .navbar-nav {
+    margin-top: 10px; /* Añade un pequeño margen superior para separar del botón */
+  }
+}
+
+body {
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.header-background {
+  background: url("../assets/img/background-img.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-texto {
+  margin-top: 80px;
+  animation: slide-in 1s ease-out forwards;
+  margin-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 992px) {
+  .contenedor-texto {
+    padding-left: 80px; /* Ajusta el margen izquierdo para pantallas grandes */
+  }
+}
+
+.texto .nombre {
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.texto .profesion {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

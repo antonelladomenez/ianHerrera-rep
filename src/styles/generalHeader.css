@@ -1,0 +1,155 @@
+/* styles/generalHeader.css */
+.navbar-transparent {
+  background-color: transparent !important;
+  z-index: 2;
+}
+
+.navbar-gallery .nav-link {
+  color: white !important; /* Color para la galería */
+}
+
+.navbar-nav .nav-link {
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.nav-links {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    padding: 10px 20px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+    width: 100%;
+    color: black;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* styles/gallery.css */
+.gallery-page {
+  padding: 50px 15px;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.gallery-description {
+  font-size: 18px;
+  color: #424545;
+}
+
+.gallery-content {
+  text-align: center;
+}
+
+.gallery-item {
+  margin-bottom: 15px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.gallery-modal .modal-dialog {
+  max-width: 90vw;
+}
+
+.expanded-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .gallery-item {
+    margin-bottom: 30px;
+  }
+}
+
+.arrow-icon {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1050;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.gallery-modal .modal-dialog {
+  max-width: 90vw;
+}
+
+.expanded-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Overlay para la sección del background */
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad */
+  z-index: 1;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2; /* Asegura que el contenido del contenedor esté por encima del overlay */
+}
+
+.hero-text-large {
+  z-index: 2;
+}

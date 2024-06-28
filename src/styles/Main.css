@@ -1,0 +1,41 @@
+.custom-row {
+  margin: 0;
+  /* Remueve el margen por defecto */
+}
+
+
+
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.img-center {
+  display: block;
+  margin: 0 auto;
+}
+
+.custom-button {
+  margin-bottom: 20px;
+
+}
+
+.img-right {
+  width: 100%;
+  height: auto;
+}
+
+.text-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+
+.custom-container {
+  margin: 100px;
+}
+.d-flex{
+  margin-top: 20px;
+}

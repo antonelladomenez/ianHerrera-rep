@@ -1,0 +1,54 @@
+.about {
+    margin-bottom: 150px;
+
+}
+
+.about .div1 {
+    display: flex;
+    justify-content: 5px;
+    align-items: center;
+    margin: 60px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.about .image {
+    height: 350px;
+    width: 800px;
+    object-fit: cover;
+}
+
+.about .button {
+    margin: auto;
+    background: #f8eddc;
+    color: #5b484a;
+    border: none;
+    border-radius: 70px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 10px;
+
+}
+
+.about .div2 {
+    display: flex;
+    justify-content: 5px;
+    align-items: center;
+    margin: 60px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.about .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+}
+
+.about p {
+    margin: 10px;
+    color: #333;
+    font-size: 16px;
+}

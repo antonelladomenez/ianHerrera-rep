@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.header-container {
+    padding: 0;
+    flex: 1;
+}
+
+.section-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media (min-width: 992px) {
+    .section-padding {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (min-width: 1440px), (min-width: 1920px) {
+    .section-padding {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+.navbar-transparent {
+    background-color: transparent !important;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.nav-links {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        padding: 10px 20px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+        width: 100%;
+        color: black;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+    }
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.header-background {
+    background: url("../assets/img/background-img.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+    .contenedor-texto {
+        padding-left: 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-text-large {
+        font-size: 48px;
+    }
+
+    .hero-subtext-large {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-text-small {
+        font-size: 38px;
+    }
+
+    .hero-subtext-small {
+        font-size: 30px;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.custom-row {
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-round {
+    border-radius: 50px !important;
+    padding: 10px 20px;
+}
+
+.img-right {
+    width: 100%;
+    height: auto;
+}
+
+.text-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.custom-container {
+    padding: 20px;
+}
+
+.d-flex {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .custom-container {
+        padding: 100px;
+    }
+}
+
+/* Slide Animations */
+.slide-in-left, .slide-in-right {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.slide-in-left {
+    transform: translateX(-100px);
+}
+
+.slide-in-right {
+    transform: translateX(100px);
+}
+
+.slide-in-left.visible, .slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer nav {
+    margin-bottom: 10px;
+}
+
+.footer .footer-left, .footer .footer-right {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer .footer-left {
+        text-align: left;
+    }
+
+    .footer .footer-right {
+        text-align: right;
+    }
+}
+
+/* Aumentar el tamaño de los íconos de redes sociales */
+.links a {
+    font-size: 2em;
+}
+
+.links a:hover {
+    color: #007bff;
+}

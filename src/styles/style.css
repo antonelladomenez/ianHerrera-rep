@@ -1,0 +1,39 @@
+.button {
+    all: unset;
+    align-items: center;
+    border: 1px solid;
+    border-color: var(--neutral-10);
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 12px 20px;
+    position: relative;
+}
+
+.button .do-something {
+    font-family: var(--body-small-font-family);
+    font-size: var(--body-small-font-size);
+    font-style: var(--body-small-font-style);
+    font-weight: var(--body-small-font-weight);
+    letter-spacing: var(--body-small-letter-spacing);
+    line-height: var(--body-small-line-height);
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.button.filled {
+    background-color: var(--neutral-10);
+}
+
+.button.filled .do-something {
+    color: var(--neutral-0);
+}
+
+.button.outlined .do-something {
+    color: var(--neutral-10);
+}
